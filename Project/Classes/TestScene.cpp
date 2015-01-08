@@ -23,7 +23,6 @@ bool TestScene::init()
     }
     
     Size winSize = Director::getInstance()->getWinSize();
-
     
     // Create the scrollview by VERTICAL
     ui::ScrollView* scrollView = ui::ScrollView::create();
@@ -40,4 +39,12 @@ bool TestScene::init()
 
     
     return true;
+}
+
+Menu* TestScene::createTestCaseMenu()
+{
+    auto menu = Menu::create();
+    
+    
+    return menu;
 }

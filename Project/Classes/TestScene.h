@@ -22,6 +22,8 @@ public:
     
     virtual bool init() override;
     
+    cocos2d::Menu* createTestCaseMenu();
+    
 };
 
 #endif /* defined(__Project__TestScene__) */
