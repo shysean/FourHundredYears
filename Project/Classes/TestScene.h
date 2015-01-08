@@ -12,6 +12,22 @@
 #include "cocos2d.h"
 #include "CocosGUI.h"
 
+#define CREATE_CONTROLLER(varTitle, varClassName)    \
+new Controller(varTitle, [](){return varClassName::create();})
+
+class TestBaseScene;
+
+typedef struct _Controller{
+    _Controller(const char *test_name, std::function<TestBaseScene*()> callback)
+    {
+        this->test_name = test_name;
+        this->callback = callback;
+    }
+    const char *test_name;
+    std::function<TestBaseScene*()> callback;
+} Controller;
+
+
 class TestScene : public cocos2d::Scene
 {
 public:
@@ -22,8 +38,14 @@ public:
     
     virtual bool init() override;
     
-    cocos2d::Menu* createTestCaseMenu();
+    void initController();
     
+protected:
+    const int MENUITEM_HEIGHT = 40;
+    const int FONT_SIZE = 30;
+    
+    std::vector<Controller*> m_controller;
+    int m_testCaseNumber;
 };
 
 #endif /* defined(__Project__TestScene__) */

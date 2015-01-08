@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		14287E521A5EACFA0082A567 /* TestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E501A5EACFA0082A567 /* TestScene.cpp */; };
 		14287E531A5EACFA0082A567 /* TestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E501A5EACFA0082A567 /* TestScene.cpp */; };
+		14287E571A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E551A5EB2ED0082A567 /* TestBaseScene.cpp */; };
+		14287E581A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E551A5EB2ED0082A567 /* TestBaseScene.cpp */; };
+		14287E5B1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E591A5EB34C0082A567 /* TMXMapTest.cpp */; };
+		14287E5C1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E591A5EB34C0082A567 /* TMXMapTest.cpp */; };
 		1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -94,6 +98,10 @@
 /* Begin PBXFileReference section */
 		14287E501A5EACFA0082A567 /* TestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestScene.cpp; sourceTree = "<group>"; };
 		14287E511A5EACFA0082A567 /* TestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
+		14287E551A5EB2ED0082A567 /* TestBaseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestBaseScene.cpp; sourceTree = "<group>"; };
+		14287E561A5EB2ED0082A567 /* TestBaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBaseScene.h; sourceTree = "<group>"; };
+		14287E591A5EB34C0082A567 /* TMXMapTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TMXMapTest.cpp; sourceTree = "<group>"; };
+		14287E5A1A5EB34C0082A567 /* TMXMapTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXMapTest.h; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -204,10 +212,22 @@
 		14287E4F1A5EACE90082A567 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				14287E541A5EB1F00082A567 /* TestCase */,
 				14287E501A5EACFA0082A567 /* TestScene.cpp */,
 				14287E511A5EACFA0082A567 /* TestScene.h */,
 			);
 			name = Test;
+			sourceTree = "<group>";
+		};
+		14287E541A5EB1F00082A567 /* TestCase */ = {
+			isa = PBXGroup;
+			children = (
+				14287E551A5EB2ED0082A567 /* TestBaseScene.cpp */,
+				14287E561A5EB2ED0082A567 /* TestBaseScene.h */,
+				14287E591A5EB34C0082A567 /* TMXMapTest.cpp */,
+				14287E5A1A5EB34C0082A567 /* TMXMapTest.h */,
+			);
+			name = TestCase;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -472,8 +492,10 @@
 				14287E521A5EACFA0082A567 /* TestScene.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				14287E5B1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				14287E571A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +506,8 @@
 				14287E531A5EACFA0082A567 /* TestScene.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				14287E581A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */,
+				14287E5C1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
