@@ -27,7 +27,7 @@ public:
     TestBaseScene();
     virtual ~TestBaseScene();
     virtual void initTestMethod() = 0;
-    virtual bool init() override;
+    virtual bool initMenu();
     
 protected:
     void addTestMenuItem(cocos2d::MenuItem *menuItem);
@@ -35,7 +35,6 @@ protected:
 protected:
     
     cocos2d::Vector<cocos2d::MenuItem *> m_menuItemList;
-    cocos2d::Menu* m_testMenu;
 };
 
 #endif /* defined(__Project__TestBaseScene__) */

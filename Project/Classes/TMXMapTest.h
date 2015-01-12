@@ -17,12 +17,20 @@ public:
     TMXMapTest();
     virtual ~TMXMapTest();
     
-    CREATE_FUNC(TMXMapTest);
-    virtual bool init();
     virtual void initTestMethod();
     
+    void update(float dt);
+    
     void testFunction();
+    void testPhys();
+    
+    void updatePosition();
+//    void onEnter() override;
 
+protected:
+    TMXTiledMap* m_map;
+    Sprite* m_flag;
+    std::vector<Vec2> m_path;
 };
 
 #endif /* defined(__Project__TMXMapTest__) */

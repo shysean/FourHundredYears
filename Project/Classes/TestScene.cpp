@@ -8,6 +8,7 @@
 
 #include "TestScene.h"
 #include "TMXMapTest.h"
+#include "HeroTest.h"
 
 USING_NS_CC;
 
@@ -33,6 +34,7 @@ TestScene::~TestScene()
 void TestScene::initController()
 {
     m_controller.push_back(CREATE_CONTROLLER("TMXMapTest", TMXMapTest));
+    m_controller.push_back(CREATE_CONTROLLER("HeroTest", HeroTest));
 
     m_testCaseNumber = m_controller.size();
 }
@@ -63,6 +65,7 @@ bool TestScene::init()
             int index = menuItem->getTag();
             
             auto scene = m_controller[index]->callback();
+            scene->autorelease();
             Director::getInstance()->replaceScene(scene);
         };
         auto item = MenuItemLabel::create(label, callback);

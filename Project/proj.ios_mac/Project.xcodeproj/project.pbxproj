@@ -13,6 +13,22 @@
 		14287E581A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E551A5EB2ED0082A567 /* TestBaseScene.cpp */; };
 		14287E5B1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E591A5EB34C0082A567 /* TMXMapTest.cpp */; };
 		14287E5C1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E591A5EB34C0082A567 /* TMXMapTest.cpp */; };
+		14287E621A60141A0082A567 /* map in Resources */ = {isa = PBXBuildFile; fileRef = 14287E611A60141A0082A567 /* map */; };
+		14287E631A60141A0082A567 /* map in Resources */ = {isa = PBXBuildFile; fileRef = 14287E611A60141A0082A567 /* map */; };
+		14287E651A60203B0082A567 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 14287E641A60203B0082A567 /* test.png */; };
+		14287E661A60203B0082A567 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 14287E641A60203B0082A567 /* test.png */; };
+		14287E6B1A60DE090082A567 /* WorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E691A60DE090082A567 /* WorldScene.cpp */; };
+		14287E6C1A60DE090082A567 /* WorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E691A60DE090082A567 /* WorldScene.cpp */; };
+		14287E721A6404420082A567 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E701A6404420082A567 /* Hero.cpp */; };
+		14287E731A6404420082A567 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E701A6404420082A567 /* Hero.cpp */; };
+		14287E761A6404C60082A567 /* FSMState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E741A6404C60082A567 /* FSMState.cpp */; };
+		14287E771A6404C60082A567 /* FSMState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E741A6404C60082A567 /* FSMState.cpp */; };
+		14287E7A1A6405AA0082A567 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E781A6405AA0082A567 /* GameObject.cpp */; };
+		14287E7B1A6405AA0082A567 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E781A6405AA0082A567 /* GameObject.cpp */; };
+		14287E7E1A640A910082A567 /* HeroTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E7C1A640A910082A567 /* HeroTest.cpp */; };
+		14287E7F1A640A910082A567 /* HeroTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E7C1A640A910082A567 /* HeroTest.cpp */; };
+		14287E811A640DEC0082A567 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 14287E801A640DEC0082A567 /* hero.png */; };
+		14287E821A640DEC0082A567 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 14287E801A640DEC0082A567 /* hero.png */; };
 		1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -102,6 +118,19 @@
 		14287E561A5EB2ED0082A567 /* TestBaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBaseScene.h; sourceTree = "<group>"; };
 		14287E591A5EB34C0082A567 /* TMXMapTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TMXMapTest.cpp; sourceTree = "<group>"; };
 		14287E5A1A5EB34C0082A567 /* TMXMapTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXMapTest.h; sourceTree = "<group>"; };
+		14287E611A60141A0082A567 /* map */ = {isa = PBXFileReference; lastKnownFileType = folder; path = map; sourceTree = "<group>"; };
+		14287E641A60203B0082A567 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		14287E691A60DE090082A567 /* WorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldScene.cpp; sourceTree = "<group>"; };
+		14287E6A1A60DE090082A567 /* WorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldScene.h; sourceTree = "<group>"; };
+		14287E701A6404420082A567 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
+		14287E711A6404420082A567 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		14287E741A6404C60082A567 /* FSMState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FSMState.cpp; sourceTree = "<group>"; };
+		14287E751A6404C60082A567 /* FSMState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMState.h; sourceTree = "<group>"; };
+		14287E781A6405AA0082A567 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		14287E791A6405AA0082A567 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		14287E7C1A640A910082A567 /* HeroTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeroTest.cpp; sourceTree = "<group>"; };
+		14287E7D1A640A910082A567 /* HeroTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroTest.h; sourceTree = "<group>"; };
+		14287E801A640DEC0082A567 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -226,8 +255,25 @@
 				14287E561A5EB2ED0082A567 /* TestBaseScene.h */,
 				14287E591A5EB34C0082A567 /* TMXMapTest.cpp */,
 				14287E5A1A5EB34C0082A567 /* TMXMapTest.h */,
+				14287E7C1A640A910082A567 /* HeroTest.cpp */,
+				14287E7D1A640A910082A567 /* HeroTest.h */,
 			);
 			name = TestCase;
+			sourceTree = "<group>";
+		};
+		14287E6E1A64040F0082A567 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				14287E701A6404420082A567 /* Hero.cpp */,
+				14287E711A6404420082A567 /* Hero.h */,
+				14287E741A6404C60082A567 /* FSMState.cpp */,
+				14287E751A6404C60082A567 /* FSMState.h */,
+				14287E781A6405AA0082A567 /* GameObject.cpp */,
+				14287E791A6405AA0082A567 /* GameObject.h */,
+				14287E691A60DE090082A567 /* WorldScene.cpp */,
+				14287E6A1A60DE090082A567 /* WorldScene.h */,
+			);
+			name = Game;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -287,6 +333,9 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14287E801A640DEC0082A567 /* hero.png */,
+				14287E641A60203B0082A567 /* test.png */,
+				14287E611A60141A0082A567 /* map */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 			);
 			name = Resources;
@@ -296,6 +345,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				14287E6E1A64040F0082A567 /* Game */,
 				14287E4F1A5EACE90082A567 /* Test */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
@@ -396,7 +446,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = MDDB52YB8L;
@@ -453,13 +503,16 @@
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
+				14287E651A60203B0082A567 /* test.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
+				14287E811A640DEC0082A567 /* hero.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
+				14287E621A60141A0082A567 /* map in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
@@ -477,8 +530,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14287E631A60141A0082A567 /* map in Resources */,
+				14287E821A640DEC0082A567 /* hero.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
+				14287E661A60203B0082A567 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,13 +545,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14287E761A6404C60082A567 /* FSMState.cpp in Sources */,
+				14287E721A6404420082A567 /* Hero.cpp in Sources */,
+				14287E7A1A6405AA0082A567 /* GameObject.cpp in Sources */,
 				14287E521A5EACFA0082A567 /* TestScene.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				14287E5B1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				14287E6B1A60DE090082A567 /* WorldScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				14287E571A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */,
+				14287E7E1A640A910082A567 /* HeroTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,8 +567,13 @@
 				14287E531A5EACFA0082A567 /* TestScene.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				14287E7F1A640A910082A567 /* HeroTest.cpp in Sources */,
+				14287E731A6404420082A567 /* Hero.cpp in Sources */,
+				14287E771A6404C60082A567 /* FSMState.cpp in Sources */,
 				14287E581A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */,
 				14287E5C1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */,
+				14287E6C1A60DE090082A567 /* WorldScene.cpp in Sources */,
+				14287E7B1A6405AA0082A567 /* GameObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,9 +659,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -622,9 +688,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = mac/Prefix.pch;

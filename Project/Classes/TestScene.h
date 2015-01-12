@@ -13,7 +13,7 @@
 #include "CocosGUI.h"
 
 #define CREATE_CONTROLLER(varTitle, varClassName)    \
-new Controller(varTitle, [](){return varClassName::create();})
+new Controller(varTitle, [](){return new varClassName();})
 
 class TestBaseScene;
 

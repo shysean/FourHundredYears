@@ -13,15 +13,15 @@ USING_NS_CC;
 
 TestBaseScene::TestBaseScene()
 {
-    
+
 }
 
 TestBaseScene::~TestBaseScene()
 {
-    
+    m_menuItemList.clear();
 }
 
-bool TestBaseScene::init()
+bool TestBaseScene::initMenu()
 {
     // Create Test Menu
     initTestMethod();

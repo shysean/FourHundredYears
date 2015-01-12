@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="map_earth" tilewidth="16" tileheight="16">
+  <image source="map_earth.png" width="160" height="80"/>
+ </tileset>
+ <layer name="mapLayer" width="50" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt09sKgCAQRVG7aPnXfXoTOCBTFuJDRnvBoSYoPVTOAQAAAAAA4K+iZEgZ01GubW/uqdbRwUuCZJGs2ay9emc76Lnt1cI33v/k7j302EO/jUkyZ/NVh1Ivvd+b59l/KLrzeiHFrl87l/b2tbmXfbTOO0qmBRI=
+  </data>
+ </layer>
+ <objectgroup name="path">
+  <object name="p1" x="0" y="432"/>
+  <object name="p2" x="96" y="432"/>
+  <object name="p3" x="160" y="368"/>
+  <object name="p4" x="224" y="368"/>
+  <object name="p5" x="240" y="384"/>
+  <object name="p6" x="272" y="384"/>
+  <object name="p0" x="0" y="480"/>
+ </objectgroup>
+</map>

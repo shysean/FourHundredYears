@@ -1,6 +1,6 @@
 #include "AppDelegate.h"
 #include "TestScene.h"
-
+#include "WorldScene.h"
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
@@ -30,6 +30,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.0 / 60);
     
     auto scene = TestScene::create();
+//    auto scene = new WorldScene();
+    
     director->runWithScene(scene);
 
     return true;
