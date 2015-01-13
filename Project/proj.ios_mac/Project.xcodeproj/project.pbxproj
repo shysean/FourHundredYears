@@ -71,6 +71,8 @@
 		521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6319F0C34300D177D7 /* Default-736h@3x.png */; };
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
+		5331D26D1A64E27A004F0C2F /* WorldMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5331D26B1A64E27A004F0C2F /* WorldMap.cpp */; };
+		5331D26E1A64E27A004F0C2F /* WorldMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5331D26B1A64E27A004F0C2F /* WorldMap.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -174,6 +176,8 @@
 		521A8E6219F0C34300D177D7 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		5331D26B1A64E27A004F0C2F /* WorldMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldMap.cpp; sourceTree = "<group>"; };
+		5331D26C1A64E27A004F0C2F /* WorldMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldMap.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -272,6 +276,8 @@
 				14287E791A6405AA0082A567 /* GameObject.h */,
 				14287E691A60DE090082A567 /* WorldScene.cpp */,
 				14287E6A1A60DE090082A567 /* WorldScene.h */,
+				5331D26B1A64E27A004F0C2F /* WorldMap.cpp */,
+				5331D26C1A64E27A004F0C2F /* WorldMap.h */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -552,6 +558,7 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				14287E5B1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */,
+				5331D26D1A64E27A004F0C2F /* WorldMap.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				14287E6B1A60DE090082A567 /* WorldScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
@@ -572,6 +579,7 @@
 				14287E771A6404C60082A567 /* FSMState.cpp in Sources */,
 				14287E581A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */,
 				14287E5C1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */,
+				5331D26E1A64E27A004F0C2F /* WorldMap.cpp in Sources */,
 				14287E6C1A60DE090082A567 /* WorldScene.cpp in Sources */,
 				14287E7B1A6405AA0082A567 /* GameObject.cpp in Sources */,
 			);

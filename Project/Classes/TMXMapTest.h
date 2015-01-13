@@ -23,10 +23,11 @@ public:
     
     void testFunction();
     void testPhys();
+    void testSetWorldMap();
+    void testCheckPoint();
     
     void updatePosition();
-//    void onEnter() override;
-
+    
 protected:
     TMXTiledMap* m_map;
     Sprite* m_flag;

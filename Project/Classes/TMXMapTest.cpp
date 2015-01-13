@@ -7,6 +7,7 @@
 //
 
 #include "TMXMapTest.h"
+#include "WorldMap.h"
 
 TMXMapTest::TMXMapTest()
 : m_map(nullptr)
@@ -35,9 +36,19 @@ TMXMapTest::~TMXMapTest()
 
 void TMXMapTest::initTestMethod()
 {
+    
     ADD_TEST_METHOD(testFunction);
     ADD_TEST_METHOD(testPhys);
+    ADD_TEST_METHOD(testSetWorldMap);
     
+}
+
+void TMXMapTest::testSetWorldMap()
+{
+    std::string tmxFile = "map/test_map3.tmx";
+    auto worldMap = WorldMap::create();
+    worldMap->setMapByTmx(tmxFile);
+    this->addChild(worldMap);
 }
 
 void TMXMapTest::update(float dt)
