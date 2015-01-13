@@ -7,23 +7,24 @@
 //
 
 #include "WorldScene.h"
+#include "WorldMap.h"
 
 USING_NS_CC;
 
+
 WorldScene::WorldScene()
+: m_map(nullptr)
 {
-    CCLOG("WorldScene ctor");
     WorldScene::initWithPhysics();
 }
 
 WorldScene::~WorldScene()
 {
-    
+
 }
 
 void WorldScene::onEnter()
 {
-    CCLOG("WorldScene onEnter");
     Scene::onEnter();
 
     this->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);

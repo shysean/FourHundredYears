@@ -11,6 +11,8 @@
 
 #include "cocos2d.h"
 
+class WorldMap;
+
 class WorldScene : public cocos2d::Scene
 {
 public:
@@ -21,6 +23,9 @@ public:
     
 //    virtual bool init() override;
     virtual void onEnter() override;
+    
+protected:
+    WorldMap* m_map;
 };
 
 #endif /* defined(__Project__WorldScene__) */

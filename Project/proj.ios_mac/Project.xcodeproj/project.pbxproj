@@ -29,6 +29,20 @@
 		14287E7F1A640A910082A567 /* HeroTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E7C1A640A910082A567 /* HeroTest.cpp */; };
 		14287E811A640DEC0082A567 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 14287E801A640DEC0082A567 /* hero.png */; };
 		14287E821A640DEC0082A567 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 14287E801A640DEC0082A567 /* hero.png */; };
+		14E843BF1A6560E200BD7CDA /* TouchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843BD1A6560E200BD7CDA /* TouchLayer.cpp */; };
+		14E843C01A6560E200BD7CDA /* TouchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843BD1A6560E200BD7CDA /* TouchLayer.cpp */; };
+		14E843C31A6563F300BD7CDA /* TouchLayerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843C11A6563F300BD7CDA /* TouchLayerTest.cpp */; };
+		14E843C41A6563F300BD7CDA /* TouchLayerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843C11A6563F300BD7CDA /* TouchLayerTest.cpp */; };
+		14E843C81A656B1600BD7CDA /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843C61A656B1600BD7CDA /* Command.cpp */; };
+		14E843C91A656B1600BD7CDA /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843C61A656B1600BD7CDA /* Command.cpp */; };
+		14E843CC1A656B9E00BD7CDA /* MoveLeftCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843CA1A656B9E00BD7CDA /* MoveLeftCommand.cpp */; };
+		14E843CD1A656B9E00BD7CDA /* MoveLeftCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843CA1A656B9E00BD7CDA /* MoveLeftCommand.cpp */; };
+		14E843D01A656C1900BD7CDA /* MoveRightCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843CE1A656C1900BD7CDA /* MoveRightCommand.cpp */; };
+		14E843D11A656C1900BD7CDA /* MoveRightCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843CE1A656C1900BD7CDA /* MoveRightCommand.cpp */; };
+		14E843D51A6570C800BD7CDA /* GameQueueTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843D31A6570C800BD7CDA /* GameQueueTest.cpp */; };
+		14E843D61A6570C800BD7CDA /* GameQueueTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843D31A6570C800BD7CDA /* GameQueueTest.cpp */; };
+		14E843D91A657B6F00BD7CDA /* CommandManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843D71A657B6F00BD7CDA /* CommandManager.cpp */; };
+		14E843DA1A657B6F00BD7CDA /* CommandManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843D71A657B6F00BD7CDA /* CommandManager.cpp */; };
 		1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -133,6 +147,22 @@
 		14287E7C1A640A910082A567 /* HeroTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeroTest.cpp; sourceTree = "<group>"; };
 		14287E7D1A640A910082A567 /* HeroTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroTest.h; sourceTree = "<group>"; };
 		14287E801A640DEC0082A567 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
+		14E843BD1A6560E200BD7CDA /* TouchLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TouchLayer.cpp; sourceTree = "<group>"; };
+		14E843BE1A6560E200BD7CDA /* TouchLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchLayer.h; sourceTree = "<group>"; };
+		14E843C11A6563F300BD7CDA /* TouchLayerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TouchLayerTest.cpp; sourceTree = "<group>"; };
+		14E843C21A6563F300BD7CDA /* TouchLayerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchLayerTest.h; sourceTree = "<group>"; };
+		14E843C61A656B1600BD7CDA /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
+		14E843C71A656B1600BD7CDA /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		14E843CA1A656B9E00BD7CDA /* MoveLeftCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MoveLeftCommand.cpp; sourceTree = "<group>"; };
+		14E843CB1A656B9E00BD7CDA /* MoveLeftCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveLeftCommand.h; sourceTree = "<group>"; };
+		14E843CE1A656C1900BD7CDA /* MoveRightCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MoveRightCommand.cpp; sourceTree = "<group>"; };
+		14E843CF1A656C1900BD7CDA /* MoveRightCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveRightCommand.h; sourceTree = "<group>"; };
+		14E843D21A656F9C00BD7CDA /* GameQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameQueue.h; sourceTree = "<group>"; };
+		14E843D31A6570C800BD7CDA /* GameQueueTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameQueueTest.cpp; sourceTree = "<group>"; };
+		14E843D41A6570C800BD7CDA /* GameQueueTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameQueueTest.h; sourceTree = "<group>"; };
+		14E843D71A657B6F00BD7CDA /* CommandManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandManager.cpp; sourceTree = "<group>"; };
+		14E843D81A657B6F00BD7CDA /* CommandManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandManager.h; sourceTree = "<group>"; };
+		14E843DB1A65885700BD7CDA /* CommandType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandType.h; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -261,6 +291,10 @@
 				14287E5A1A5EB34C0082A567 /* TMXMapTest.h */,
 				14287E7C1A640A910082A567 /* HeroTest.cpp */,
 				14287E7D1A640A910082A567 /* HeroTest.h */,
+				14E843C11A6563F300BD7CDA /* TouchLayerTest.cpp */,
+				14E843C21A6563F300BD7CDA /* TouchLayerTest.h */,
+				14E843D31A6570C800BD7CDA /* GameQueueTest.cpp */,
+				14E843D41A6570C800BD7CDA /* GameQueueTest.h */,
 			);
 			name = TestCase;
 			sourceTree = "<group>";
@@ -268,6 +302,7 @@
 		14287E6E1A64040F0082A567 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				14E843C51A656B0200BD7CDA /* Command */,
 				14287E701A6404420082A567 /* Hero.cpp */,
 				14287E711A6404420082A567 /* Hero.h */,
 				14287E741A6404C60082A567 /* FSMState.cpp */,
@@ -278,8 +313,27 @@
 				14287E6A1A60DE090082A567 /* WorldScene.h */,
 				5331D26B1A64E27A004F0C2F /* WorldMap.cpp */,
 				5331D26C1A64E27A004F0C2F /* WorldMap.h */,
+				14E843BD1A6560E200BD7CDA /* TouchLayer.cpp */,
+				14E843BE1A6560E200BD7CDA /* TouchLayer.h */,
 			);
 			name = Game;
+			sourceTree = "<group>";
+		};
+		14E843C51A656B0200BD7CDA /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				14E843C61A656B1600BD7CDA /* Command.cpp */,
+				14E843C71A656B1600BD7CDA /* Command.h */,
+				14E843CA1A656B9E00BD7CDA /* MoveLeftCommand.cpp */,
+				14E843CB1A656B9E00BD7CDA /* MoveLeftCommand.h */,
+				14E843CE1A656C1900BD7CDA /* MoveRightCommand.cpp */,
+				14E843CF1A656C1900BD7CDA /* MoveRightCommand.h */,
+				14E843D21A656F9C00BD7CDA /* GameQueue.h */,
+				14E843D71A657B6F00BD7CDA /* CommandManager.cpp */,
+				14E843D81A657B6F00BD7CDA /* CommandManager.h */,
+				14E843DB1A65885700BD7CDA /* CommandType.h */,
+			);
+			name = Command;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -552,14 +606,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				14287E761A6404C60082A567 /* FSMState.cpp in Sources */,
+				14E843D91A657B6F00BD7CDA /* CommandManager.cpp in Sources */,
+				14E843CC1A656B9E00BD7CDA /* MoveLeftCommand.cpp in Sources */,
 				14287E721A6404420082A567 /* Hero.cpp in Sources */,
 				14287E7A1A6405AA0082A567 /* GameObject.cpp in Sources */,
 				14287E521A5EACFA0082A567 /* TestScene.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				14E843C31A6563F300BD7CDA /* TouchLayerTest.cpp in Sources */,
 				14287E5B1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */,
+				14E843BF1A6560E200BD7CDA /* TouchLayer.cpp in Sources */,
 				5331D26D1A64E27A004F0C2F /* WorldMap.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				14E843D51A6570C800BD7CDA /* GameQueueTest.cpp in Sources */,
+				14E843C81A656B1600BD7CDA /* Command.cpp in Sources */,
+				14E843D01A656C1900BD7CDA /* MoveRightCommand.cpp in Sources */,
 				14287E6B1A60DE090082A567 /* WorldScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				14287E571A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */,
@@ -572,16 +633,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				14287E531A5EACFA0082A567 /* TestScene.cpp in Sources */,
+				14E843DA1A657B6F00BD7CDA /* CommandManager.cpp in Sources */,
+				14E843C91A656B1600BD7CDA /* Command.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				14287E7F1A640A910082A567 /* HeroTest.cpp in Sources */,
+				14E843D61A6570C800BD7CDA /* GameQueueTest.cpp in Sources */,
 				14287E731A6404420082A567 /* Hero.cpp in Sources */,
 				14287E771A6404C60082A567 /* FSMState.cpp in Sources */,
 				14287E581A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */,
+				14E843C41A6563F300BD7CDA /* TouchLayerTest.cpp in Sources */,
+				14E843D11A656C1900BD7CDA /* MoveRightCommand.cpp in Sources */,
 				14287E5C1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */,
 				5331D26E1A64E27A004F0C2F /* WorldMap.cpp in Sources */,
+				14E843CD1A656B9E00BD7CDA /* MoveLeftCommand.cpp in Sources */,
 				14287E6C1A60DE090082A567 /* WorldScene.cpp in Sources */,
 				14287E7B1A6405AA0082A567 /* GameObject.cpp in Sources */,
+				14E843C01A6560E200BD7CDA /* TouchLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
