@@ -22,15 +22,18 @@ public:
     
     void playAniByName(std::string name);
     
+    void update(float delay);
+    
+    void move(int dir);
+    void stand();
+    
 protected:
     void initAnimation();
     void initAnimation(std::string name, int startPos, int endPos, bool isRestore = true);
 protected:
     const char* RES_HERO;
-    
-    
-    
-    
+    int dir;
+    int state;
 };
 
 #endif /* defined(__Project__Hero__) */

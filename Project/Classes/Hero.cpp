@@ -12,8 +12,10 @@ USING_NS_CC;
 
 Hero::Hero()
 : RES_HERO("hero.png")
+, dir(0)
+, state(0)
 {
-    
+    this->setName("Hero");
 }
 
 Hero::~Hero()
@@ -86,4 +88,33 @@ void Hero::initAnimation(std::string name, int startPos, int endPos, bool isRest
     animation->setRestoreOriginalFrame(isRestore);
     
     AnimationCache::getInstance()->addAnimation(animation, name);
+}
+
+void Hero::move(int dir)
+{
+    this->dir = dir;
+    this->state = 1;
+}
+
+void Hero::stand()
+{
+    this->state = 0;
+}
+
+void Hero::update(float delay)
+{
+    if (this->state == 1) {
+    
+        auto pos = this->getPosition();
+        if (this->dir == 0)
+        {
+            this->setPosition(Vec2(pos.x + 0.3, pos.y));
+            m_sprite->setFlippedX(false);
+        }
+        else
+        {
+            this->setPosition(Vec2(pos.x - 0.3, pos.y));
+            m_sprite->setFlippedX(true);
+        }
+    }
 }

@@ -14,7 +14,7 @@
 class MoveRightCommand : public Command
 {
 public:
-    MoveRightCommand(int type);
+    MoveRightCommand();
     virtual ~MoveRightCommand();
     
     virtual void execute(GameObject* obj, ...) override;

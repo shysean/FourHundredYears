@@ -34,12 +34,12 @@ bool TouchLayer::init()
         if (pos.x < winSize.width * 0.5)
         {
             CCLOG("GO LEFT");
-            auto command = new MoveLeftCommand(CommandType::MOVE_LEFT);
+            auto command = new MoveLeftCommand();
             CommandManager::getInstance()->addCommand(command);
         }else
         {
             CCLOG("GO RIGHT");
-            auto command = new MoveRightCommand(CommandType::MOVE_LEFT);
+            auto command = new MoveRightCommand();
             CommandManager::getInstance()->addCommand(command);
         }
         return true;

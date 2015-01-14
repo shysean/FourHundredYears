@@ -11,6 +11,8 @@
 
 #include "TestBaseScene.h"
 
+class Hero;
+
 class TouchLayerTest : public TestBaseScene
 {
 public:
@@ -22,6 +24,9 @@ public:
     void update(float delay);
 
     void testTouchLayer();
+    
+protected:
+    Hero* m_hero;
 };
 
 #endif /* defined(__Project__TouchLayerTest__) */

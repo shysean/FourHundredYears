@@ -7,10 +7,11 @@
 //
 
 #include "MoveRightCommand.h"
+#include "Hero.h"
 
-MoveRightCommand::MoveRightCommand(int type)
+MoveRightCommand::MoveRightCommand()
 {
-    this->m_type = type;
+    this->m_type = CommandType::MOVE_RIGHT;
 }
 
 MoveRightCommand::~MoveRightCommand()
@@ -20,5 +21,8 @@ MoveRightCommand::~MoveRightCommand()
 
 void MoveRightCommand::execute(GameObject* obj, ...)
 {
-    CCLOG("MoveRightCommand execute");
+    Hero* hero = dynamic_cast<Hero*>(obj);
+    CCLOG("MoveRightCommand execute %s", hero->getName().c_str());
+    
+    hero->move(0);
 }
