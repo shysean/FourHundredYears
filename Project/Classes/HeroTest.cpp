@@ -23,6 +23,7 @@ void HeroTest::initTestMethod()
 {
     ADD_TEST_METHOD(testHeroName);
     ADD_TEST_METHOD(testHeroDisplay);
+    ADD_TEST_METHOD(testHeroMove);
 }
 
 void HeroTest::testHeroName()
@@ -44,4 +45,29 @@ void HeroTest::testHeroDisplay()
         addChild(hero);
     }
 
+}
+
+void HeroTest::testHeroMove()
+{
+    Size s = Director::getInstance()->getWinSize();
+
+    auto hero = Hero::create();
+    hero->playAniByName("walk");
+    hero->setPosition(Vec2(s.width / 3, s.height / 5));
+    this->addChild(hero);
+    
+    auto array = PointArray::create(20);
+    
+    array->addControlPoint(Vec2(0, 0));
+    array->addControlPoint(Vec2(100, 0));
+    array->addControlPoint(Vec2(150, 50));
+    array->addControlPoint(Vec2(200, 100));
+    array->addControlPoint(Vec2(300, 100));
+    array->addControlPoint(Vec2(300, 0));
+    array->addControlPoint(Vec2(200, 0));
+    array->addControlPoint(Vec2(100, 0));
+    array->addControlPoint(Vec2(0, 0));
+    
+    auto action = CardinalSplineBy::create(6, array, 1);
+    hero->runAction(action);
 }

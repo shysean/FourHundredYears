@@ -23,9 +23,15 @@ Hero::~Hero()
 
 bool Hero::init()
 {
+    int size = 32;
+    this->setContentSize(Size(size,size));
+    this->setAnchorPoint(Vec2(0.5,0));
+    
     initAnimation();
     
     m_sprite = Sprite::create();
+    m_sprite->setAnchorPoint(Vec2(0.5,0));
+    m_sprite->setPosition(Vec2(size * 0.5, 0));
     this->addChild(m_sprite);
     
     return true;

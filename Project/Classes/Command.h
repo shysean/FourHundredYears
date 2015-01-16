@@ -21,9 +21,8 @@ public:
     
     virtual void execute(GameObject* obj, ...) = 0;
     
-    int getType(){ return m_type; };
-protected:
-    int m_type;
+    CC_SYNTHESIZE(int, m_type, Type);
+
 };
 
 #endif /* defined(__Project__Command__) */

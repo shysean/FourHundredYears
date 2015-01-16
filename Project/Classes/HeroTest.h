@@ -20,7 +20,7 @@ public:
     
     void testHeroName();
     void testHeroDisplay();
-
+    void testHeroMove();
 };
 
 #endif /* defined(__Project__HeroTest__) */

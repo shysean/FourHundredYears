@@ -87,6 +87,8 @@
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		5331D26D1A64E27A004F0C2F /* WorldMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5331D26B1A64E27A004F0C2F /* WorldMap.cpp */; };
 		5331D26E1A64E27A004F0C2F /* WorldMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5331D26B1A64E27A004F0C2F /* WorldMap.cpp */; };
+		53F652261A68AB78003BB258 /* PhysicsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53F652241A68AB78003BB258 /* PhysicsTest.cpp */; };
+		53F652271A68AB78003BB258 /* PhysicsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53F652241A68AB78003BB258 /* PhysicsTest.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -208,6 +210,8 @@
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		5331D26B1A64E27A004F0C2F /* WorldMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldMap.cpp; sourceTree = "<group>"; };
 		5331D26C1A64E27A004F0C2F /* WorldMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldMap.h; sourceTree = "<group>"; };
+		53F652241A68AB78003BB258 /* PhysicsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsTest.cpp; sourceTree = "<group>"; };
+		53F652251A68AB78003BB258 /* PhysicsTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsTest.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -295,6 +299,8 @@
 				14E843C21A6563F300BD7CDA /* TouchLayerTest.h */,
 				14E843D31A6570C800BD7CDA /* GameQueueTest.cpp */,
 				14E843D41A6570C800BD7CDA /* GameQueueTest.h */,
+				53F652241A68AB78003BB258 /* PhysicsTest.cpp */,
+				53F652251A68AB78003BB258 /* PhysicsTest.h */,
 			);
 			name = TestCase;
 			sourceTree = "<group>";
@@ -322,16 +328,16 @@
 		14E843C51A656B0200BD7CDA /* Command */ = {
 			isa = PBXGroup;
 			children = (
+				14E843DB1A65885700BD7CDA /* CommandType.h */,
+				14E843D21A656F9C00BD7CDA /* GameQueue.h */,
+				14E843D71A657B6F00BD7CDA /* CommandManager.cpp */,
+				14E843D81A657B6F00BD7CDA /* CommandManager.h */,
 				14E843C61A656B1600BD7CDA /* Command.cpp */,
 				14E843C71A656B1600BD7CDA /* Command.h */,
 				14E843CA1A656B9E00BD7CDA /* MoveLeftCommand.cpp */,
 				14E843CB1A656B9E00BD7CDA /* MoveLeftCommand.h */,
 				14E843CE1A656C1900BD7CDA /* MoveRightCommand.cpp */,
 				14E843CF1A656C1900BD7CDA /* MoveRightCommand.h */,
-				14E843D21A656F9C00BD7CDA /* GameQueue.h */,
-				14E843D71A657B6F00BD7CDA /* CommandManager.cpp */,
-				14E843D81A657B6F00BD7CDA /* CommandManager.h */,
-				14E843DB1A65885700BD7CDA /* CommandType.h */,
 			);
 			name = Command;
 			sourceTree = "<group>";
@@ -606,6 +612,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14287E761A6404C60082A567 /* FSMState.cpp in Sources */,
+				53F652261A68AB78003BB258 /* PhysicsTest.cpp in Sources */,
 				14E843D91A657B6F00BD7CDA /* CommandManager.cpp in Sources */,
 				14E843CC1A656B9E00BD7CDA /* MoveLeftCommand.cpp in Sources */,
 				14287E721A6404420082A567 /* Hero.cpp in Sources */,
@@ -633,6 +640,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14287E531A5EACFA0082A567 /* TestScene.cpp in Sources */,
+				53F652271A68AB78003BB258 /* PhysicsTest.cpp in Sources */,
 				14E843DA1A657B6F00BD7CDA /* CommandManager.cpp in Sources */,
 				14E843C91A656B1600BD7CDA /* Command.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,

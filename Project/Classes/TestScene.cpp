@@ -11,6 +11,7 @@
 #include "HeroTest.h"
 #include "TouchLayerTest.h"
 #include "GameQueueTest.h"
+#include "PhysicsTest.h"
 
 USING_NS_CC;
 
@@ -39,6 +40,7 @@ void TestScene::initController()
     m_controller.push_back(CREATE_CONTROLLER("HeroTest", HeroTest));
     m_controller.push_back(CREATE_CONTROLLER("TouchLayer", TouchLayerTest));
     m_controller.push_back(CREATE_CONTROLLER("GameQueueTest", GameQueueTest));
+    m_controller.push_back(CREATE_CONTROLLER("PhysicsTest", PhysicsTest));
 
     m_testCaseNumber = m_controller.size();
 }
