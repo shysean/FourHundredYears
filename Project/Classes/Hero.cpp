@@ -108,12 +108,12 @@ void Hero::update(float delay)
         auto pos = this->getPosition();
         if (this->dir == 0)
         {
-            this->setPosition(Vec2(pos.x + 0.3, pos.y));
+            this->setPosition(Vec2(pos.x + 10, pos.y));
             m_sprite->setFlippedX(false);
         }
         else
         {
-            this->setPosition(Vec2(pos.x - 0.3, pos.y));
+            this->setPosition(Vec2(pos.x - 1, pos.y));
             m_sprite->setFlippedX(true);
         }
     }

@@ -18,7 +18,7 @@ public:
     virtual ~Hero();
 
     virtual bool init() override;
-    CREATE_FUNC(Hero);
+    CREATE_FUNC(Hero)
     
     void playAniByName(std::string name);
     
@@ -27,12 +27,13 @@ public:
     void move(int dir);
     void stand();
     
+    CC_SYNTHESIZE(int, dir, Dir)
+    
 protected:
     void initAnimation();
     void initAnimation(std::string name, int startPos, int endPos, bool isRestore = true);
 protected:
     const char* RES_HERO;
-    int dir;
     int state;
 };
 

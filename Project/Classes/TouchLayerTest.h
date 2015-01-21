@@ -12,6 +12,7 @@
 #include "TestBaseScene.h"
 
 class Hero;
+class GameObject;
 
 class TouchLayerTest : public TestBaseScene
 {
@@ -24,9 +25,16 @@ public:
     void update(float delay);
 
     void testTouchLayer();
+    void testCameraFollow();
+    
+protected:
+    void cameraFollow(GameObject* targe, Node* container, Rect& innerBoundary, int dir);
+    
     
 protected:
     Hero* m_hero;
+    DrawNode* m_ground;
+    
 };
 
 #endif /* defined(__Project__TouchLayerTest__) */
