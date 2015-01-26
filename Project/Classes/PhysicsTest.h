@@ -27,6 +27,7 @@ public:
     void testHeroMoveLeft();
     void testHeroMoveRight();
     void testHeroMoveStop();
+    void testContact();
     
 protected:
     Hero* m_hero;

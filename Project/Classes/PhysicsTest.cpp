@@ -22,24 +22,25 @@ PhysicsTest::PhysicsTest()
     
     Size winSize = Director::getInstance()->getWinSize();
     auto body = PhysicsBody::createEdgeBox(winSize, PHYSICSBODY_MATERIAL_DEFAULT, 3);
-    body->setCategoryBitmask(0x00);
+//    body->setCategoryBitmask(0x00);
 
     auto edgeNode = Node::create();
     edgeNode->setPosition(Point(winSize.width/2,winSize.height/2));
     edgeNode->setPhysicsBody(body);
     this->addChild(edgeNode);
     
+    
     auto listener = EventListenerPhysicsContact::create();
     listener->onContactBegin = [](PhysicsContact& contact)
     {
-        auto spriteA = (Sprite*)contact.getShapeA()->getBody()->getNode();
-        auto spriteB = (Sprite*)contact.getShapeB()->getBody()->getNode();
-        
-        if (spriteA && spriteA->getTag() == 1 && spriteB && spriteB->getTag() == 1)
-        {
-            spriteA->setColor(Color3B::YELLOW);
-            spriteB->setColor(Color3B::YELLOW);
-        }
+//        auto spriteA = (Sprite*)contact.getShapeA()->getBody()->getNode();
+//        auto spriteB = (Sprite*)contact.getShapeB()->getBody()->getNode();
+//        
+//        if (spriteA && spriteA->getTag() == 1 && spriteB && spriteB->getTag() == 1)
+//        {
+//            spriteA->setColor(Color3B::YELLOW);
+//            spriteB->setColor(Color3B::YELLOW);
+//        }
         
         log("onContactBegin");
         return true;
@@ -87,6 +88,7 @@ void PhysicsTest::initTestMethod()
     ADD_TEST_METHOD(testHeroMoveLeft);
     ADD_TEST_METHOD(testHeroMoveRight);
     ADD_TEST_METHOD(testHeroMoveStop);
+    ADD_TEST_METHOD(testContact);
 
 }
 
@@ -114,6 +116,42 @@ void PhysicsTest::update(float dt)
         
     }
 }
+/*  
+ * 两个body的CategoryBitmask与对方的CollisionBitmask 有任意一组与运算 = 0 不碰撞
+ * 两个body的CategoryBitmask与对方的ContactTestBitmask 有任意一组与运算 = 0 不通知
+ *
+ */
+void PhysicsTest::testContact()
+{
+    auto node = Node::create();
+    node->setPosition(100, 100);
+    node->setContentSize(Size(50, 50));
+    
+    auto body = PhysicsBody::createBox(Size(50,50));
+    body->setGravityEnable(false);
+    
+    body->setCategoryBitmask(0x0111);
+    body->setContactTestBitmask(0x0100);
+    body->setCollisionBitmask(0x0001);
+    
+    node->setPhysicsBody(body);
+
+    this->addChild(node);
+    body->applyImpulse(Vect(30000,0));
+    
+    
+    auto staticNode = Node::create();
+    staticNode->setPosition(200, 100);
+    
+    auto staticBody = PhysicsBody::createBox(Size(50,50));
+    staticBody->setGravityEnable(false);
+    staticBody->setCategoryBitmask(0x0101);
+    staticBody->setContactTestBitmask(0x0010);
+    staticBody->setCollisionBitmask(0x0100);
+
+    staticNode->setPhysicsBody(staticBody);
+    this->addChild(staticNode);
+}
 
 void PhysicsTest::testHeroBody()
 {
@@ -125,21 +163,10 @@ void PhysicsTest::testHeroBody()
     
     auto material = PhysicsMaterial(1.0f, 0.0f, 0.1f);
     auto body = PhysicsBody::createBox(m_hero->getContentSize(), material);
-    body->setContactTestBitmask(0x00);
-    body->setCategoryBitmask(0x01);
+//    body->setContactTestBitmask(0x00);
+//    body->setCategoryBitmask(0x01);
     m_hero->setPhysicsBody(body);
     this->addChild(m_hero);
-    
-    auto hero = Hero::create();
-    hero->playAniByName("walk");
-    hero->setPosition(Vec2(winSize.width * 0.5, winSize.height * 0.4));
-    
-    auto material1 = PhysicsMaterial(1.0f, 0.0f, 0.1f);
-    auto body1 = PhysicsBody::createBox(m_hero->getContentSize(), material1);
-    body->setContactTestBitmask(0x10);
-    body->setCategoryBitmask(0x10);
-    hero->setPhysicsBody(body1);
-    this->addChild(hero);
 
 }
 
