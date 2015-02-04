@@ -29,6 +29,12 @@
 		14287E7F1A640A910082A567 /* HeroTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14287E7C1A640A910082A567 /* HeroTest.cpp */; };
 		14287E811A640DEC0082A567 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 14287E801A640DEC0082A567 /* hero.png */; };
 		14287E821A640DEC0082A567 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 14287E801A640DEC0082A567 /* hero.png */; };
+		1448C81A1A825A600087039B /* AniTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1448C8181A825A600087039B /* AniTest.cpp */; };
+		1448C81B1A825A600087039B /* AniTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1448C8181A825A600087039B /* AniTest.cpp */; };
+		1448C81D1A825DCA0087039B /* testEarth.png in Resources */ = {isa = PBXBuildFile; fileRef = 1448C81C1A825DCA0087039B /* testEarth.png */; };
+		1448C81E1A825DCA0087039B /* testEarth.png in Resources */ = {isa = PBXBuildFile; fileRef = 1448C81C1A825DCA0087039B /* testEarth.png */; };
+		1448C8211A8267480087039B /* SeasonObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1448C81F1A8267480087039B /* SeasonObject.cpp */; };
+		1448C8221A8267480087039B /* SeasonObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1448C81F1A8267480087039B /* SeasonObject.cpp */; };
 		14E843BF1A6560E200BD7CDA /* TouchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843BD1A6560E200BD7CDA /* TouchLayer.cpp */; };
 		14E843C01A6560E200BD7CDA /* TouchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843BD1A6560E200BD7CDA /* TouchLayer.cpp */; };
 		14E843C31A6563F300BD7CDA /* TouchLayerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E843C11A6563F300BD7CDA /* TouchLayerTest.cpp */; };
@@ -149,6 +155,12 @@
 		14287E7C1A640A910082A567 /* HeroTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeroTest.cpp; sourceTree = "<group>"; };
 		14287E7D1A640A910082A567 /* HeroTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroTest.h; sourceTree = "<group>"; };
 		14287E801A640DEC0082A567 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
+		1448C8181A825A600087039B /* AniTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AniTest.cpp; sourceTree = "<group>"; };
+		1448C8191A825A600087039B /* AniTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AniTest.h; sourceTree = "<group>"; };
+		1448C81C1A825DCA0087039B /* testEarth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testEarth.png; sourceTree = "<group>"; };
+		1448C81F1A8267480087039B /* SeasonObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SeasonObject.cpp; sourceTree = "<group>"; };
+		1448C8201A8267480087039B /* SeasonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeasonObject.h; sourceTree = "<group>"; };
+		1448C8231A8268140087039B /* GameConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConst.h; sourceTree = "<group>"; };
 		14E843BD1A6560E200BD7CDA /* TouchLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TouchLayer.cpp; sourceTree = "<group>"; };
 		14E843BE1A6560E200BD7CDA /* TouchLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchLayer.h; sourceTree = "<group>"; };
 		14E843C11A6563F300BD7CDA /* TouchLayerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TouchLayerTest.cpp; sourceTree = "<group>"; };
@@ -301,6 +313,8 @@
 				14E843D41A6570C800BD7CDA /* GameQueueTest.h */,
 				53F652241A68AB78003BB258 /* PhysicsTest.cpp */,
 				53F652251A68AB78003BB258 /* PhysicsTest.h */,
+				1448C8181A825A600087039B /* AniTest.cpp */,
+				1448C8191A825A600087039B /* AniTest.h */,
 			);
 			name = TestCase;
 			sourceTree = "<group>";
@@ -309,6 +323,8 @@
 			isa = PBXGroup;
 			children = (
 				14E843C51A656B0200BD7CDA /* Command */,
+				1448C81F1A8267480087039B /* SeasonObject.cpp */,
+				1448C8201A8267480087039B /* SeasonObject.h */,
 				14287E701A6404420082A567 /* Hero.cpp */,
 				14287E711A6404420082A567 /* Hero.h */,
 				14287E741A6404C60082A567 /* FSMState.cpp */,
@@ -321,6 +337,7 @@
 				5331D26C1A64E27A004F0C2F /* WorldMap.h */,
 				14E843BD1A6560E200BD7CDA /* TouchLayer.cpp */,
 				14E843BE1A6560E200BD7CDA /* TouchLayer.h */,
+				1448C8231A8268140087039B /* GameConst.h */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -399,6 +416,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1448C81C1A825DCA0087039B /* testEarth.png */,
 				14287E801A640DEC0082A567 /* hero.png */,
 				14287E641A60203B0082A567 /* test.png */,
 				14287E611A60141A0082A567 /* map */,
@@ -573,6 +591,7 @@
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				14287E811A640DEC0082A567 /* hero.png in Resources */,
+				1448C81D1A825DCA0087039B /* testEarth.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
@@ -600,6 +619,7 @@
 				14287E821A640DEC0082A567 /* hero.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
+				1448C81E1A825DCA0087039B /* testEarth.png in Resources */,
 				14287E661A60203B0082A567 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,8 +639,10 @@
 				14287E7A1A6405AA0082A567 /* GameObject.cpp in Sources */,
 				14287E521A5EACFA0082A567 /* TestScene.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				1448C81A1A825A600087039B /* AniTest.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				14E843C31A6563F300BD7CDA /* TouchLayerTest.cpp in Sources */,
+				1448C8211A8267480087039B /* SeasonObject.cpp in Sources */,
 				14287E5B1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */,
 				14E843BF1A6560E200BD7CDA /* TouchLayer.cpp in Sources */,
 				5331D26D1A64E27A004F0C2F /* WorldMap.cpp in Sources */,
@@ -651,9 +673,11 @@
 				14287E771A6404C60082A567 /* FSMState.cpp in Sources */,
 				14287E581A5EB2ED0082A567 /* TestBaseScene.cpp in Sources */,
 				14E843C41A6563F300BD7CDA /* TouchLayerTest.cpp in Sources */,
+				1448C81B1A825A600087039B /* AniTest.cpp in Sources */,
 				14E843D11A656C1900BD7CDA /* MoveRightCommand.cpp in Sources */,
 				14287E5C1A5EB34C0082A567 /* TMXMapTest.cpp in Sources */,
 				5331D26E1A64E27A004F0C2F /* WorldMap.cpp in Sources */,
+				1448C8221A8267480087039B /* SeasonObject.cpp in Sources */,
 				14E843CD1A656B9E00BD7CDA /* MoveLeftCommand.cpp in Sources */,
 				14287E6C1A60DE090082A567 /* WorldScene.cpp in Sources */,
 				14287E7B1A6405AA0082A567 /* GameObject.cpp in Sources */,

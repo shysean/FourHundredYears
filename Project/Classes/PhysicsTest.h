@@ -29,6 +29,9 @@ public:
     void testHeroMoveStop();
     void testContact();
     
+    bool onContactBegin(PhysicsContact& contact);
+
+    
 protected:
     Hero* m_hero;
     int m_flag;

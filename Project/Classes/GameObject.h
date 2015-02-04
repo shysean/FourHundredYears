@@ -18,7 +18,6 @@ public:
     virtual ~GameObject();
     
     CC_SYNTHESIZE(std::string, m_name, Name);
-    CC_SYNTHESIZE(cocos2d::Sprite*, m_sprite, Sprite);
     
 };
 

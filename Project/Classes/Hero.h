@@ -28,7 +28,8 @@ public:
     void stand();
     
     CC_SYNTHESIZE(int, dir, Dir)
-    
+    CC_SYNTHESIZE(cocos2d::Sprite*, m_sprite, Sprite);
+
 protected:
     void initAnimation();
     void initAnimation(std::string name, int startPos, int endPos, bool isRestore = true);

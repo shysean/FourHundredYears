@@ -75,6 +75,7 @@ PhysicsTest::PhysicsTest()
     
     Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener,1);
     
+
 }
 
 PhysicsTest::~PhysicsTest()
@@ -100,11 +101,6 @@ void PhysicsTest::update(float dt)
     if (m_hero) {
         auto body = m_hero->getPhysicsBody();
 
-//        if (m_flag == 0)
-//        {
-//            body->get
-//        }
-//        else
         {
             if (abs(body->getVelocity().x) < 10.0f) {
                 body->applyForce(Vect(30000.0f * m_flag ,0));
@@ -153,6 +149,12 @@ void PhysicsTest::testContact()
     this->addChild(staticNode);
 }
 
+bool PhysicsTest::onContactBegin(PhysicsContact& contact)
+{
+    CCLOG("onContactBegin");
+    return true;
+}
+
 void PhysicsTest::testHeroBody()
 {
     Size winSize = Director::getInstance()->getWinSize();
@@ -168,6 +170,7 @@ void PhysicsTest::testHeroBody()
     m_hero->setPhysicsBody(body);
     this->addChild(m_hero);
 
+
 }
 
 void PhysicsTest::testHeroMoveLeft()
@@ -182,5 +185,5 @@ void PhysicsTest::testHeroMoveRight()
 
 void PhysicsTest::testHeroMoveStop()
 {
-    this->m_flag = 0;
+
 }

@@ -10,7 +10,6 @@
 
 GameObject::GameObject()
 : m_name("GameObject")
-, m_sprite(nullptr)
 {
     
 }
